@@ -1,3 +1,4 @@
+package io.github.tiagoshibata.gpsdclient;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -8,4 +9,9 @@ public class StartAppOnBoot extends BroadcastReceiver {
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(i);
 }
+
+    @Override
+    public void onReceive(Context context, Intent intent) {
+
+    }
 }
