@@ -20,11 +20,18 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.support.v7.app.AppCompatActivity;
 
 import java.lang.ref.WeakReference;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
+public class MainActivity extends AppCompatActivity {
+    public void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
 public class MainActivity extends Activity {
     private static final int REQUEST_CODE_FINE_LOCATION = 0;
     private static final String SERVER_ADDRESS = "SERVER_ADDRESS";
